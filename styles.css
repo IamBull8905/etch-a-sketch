@@ -1,17 +1,35 @@
+body,html {
+    height: 100%;
+}
+
 body {
     margin: 0;
-    border: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin-bottom: 30px;
 }
 
 .container {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    height: 850px;
     width: 850px;
+    border: 10px solid red;
 }
 
 .tile{
     background-color: #F2F2F2;
-    width: 50px;
-    height: 50px;
+    flex: 1;
     border: 1px solid black;
+}
+
+.row-div {
+    display: flex;
+    flex: 1;
 }
