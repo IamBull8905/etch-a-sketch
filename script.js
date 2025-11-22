@@ -2,10 +2,10 @@ const container = document.querySelector(".container");
 const button = document.querySelector("button");
 let size = 16;
 
-for (let i = 0; i < 32; i++) {
+for (let i = 0; i < size; i++) {
     let rowDiv = document.createElement("div");
     rowDiv.classList.add("row-div");
-    for (let j = 0; j < 32; j++) {
+    for (let j = 0; j < size; j++) {
         const newDiv = document.createElement("div");
         newDiv.classList.add("tile");
         newDiv.addEventListener("mouseover", () => newDiv.style.backgroundColor = "#7851A9");
