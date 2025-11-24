@@ -1,1 +1,1 @@
-# etch-a-sketch
+This project was the fourth project in The Odin Project curriculum. It focusses on DOM manipulation and therefore made a digital drawing canvas.
