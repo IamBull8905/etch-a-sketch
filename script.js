@@ -2,6 +2,12 @@ const container = document.querySelector(".container");
 const button = document.querySelector("button");
 let size = 16;
 
+function chooseColour() {
+    return "hsl(" + 360 * Math.random() + ',' +
+             (25 + 70 * Math.random()) + '%,' + 
+             (85 + 10 * Math.random()) + '%)';
+};
+
 function setGridSize(size) {
     container.innerHTML = "";
     for (let i = 0; i < size; i++) {
@@ -10,7 +16,7 @@ function setGridSize(size) {
         for (let j = 0; j < size; j++) {
             const newDiv = document.createElement("div");
             newDiv.classList.add("tile");
-            newDiv.addEventListener("mouseover", () => newDiv.style.backgroundColor = "#7851A9");
+            newDiv.addEventListener("mouseover", () => newDiv.style.backgroundColor = chooseColour());
             rowDiv.appendChild(newDiv);
         };
         container.appendChild(rowDiv);

@@ -1,5 +1,6 @@
 body,html {
     height: 100%;
+    background-color: #CEDFDF;
 }
 
 body {
@@ -12,6 +13,9 @@ body {
 
 button {
     margin-bottom: 30px;
+    background-color: #A9C3B6;
+    border-radius: 10px;
+    border: none;
 }
 
 .container {
@@ -20,11 +24,11 @@ button {
     flex-wrap: wrap;
     height: 850px;
     width: 850px;
-    border: 10px solid red;
+    border: 10px solid #8FB8CA;
 }
 
 .tile{
-    background-color: #F2F2F2;
+    background-color: #B7D1D3;
     flex: 1;
     border: 1px solid black;
 }
